@@ -1,0 +1,58 @@
+.menuContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menuButton {
+  background: #0070f3;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+
+  &:hover {
+    background: #0056b3;
+  }
+}
+
+.menuList {
+  list-style: none;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 200px;
+  margin: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menuList li {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: #ddd;
+  }
+}
+
+.selected {
+  background: #0070f3;
+  color: white;
+  font-weight: bold;
+}
+
+/* 📌 Responsive Styling */
+@media (max-width: 600px) {
+  .menuButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .menuList {
+    width: 150px;
+  }
+}

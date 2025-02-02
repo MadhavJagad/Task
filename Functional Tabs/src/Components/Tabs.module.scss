@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  max-width: 90vw;
+  margin: auto;
+  text-align: center;
+}
+
+.tabsWrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  flex-shrink: 0;
+
+  &:hover {
+    background: #bbb;
+  }
+
+  &.active {
+    background: #0070f3;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+/* ======================== Responsive Design ============================*/
+
+@media (max-width: 600px) {
+  .tabs {
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .tab {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+}
